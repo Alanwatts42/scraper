@@ -4,14 +4,13 @@
 
 ## Evan Sherwood
 
-## <a href='https://github.com/Alanwatts42/scraper'> https://github.com/Alanwatts42/scraper</a>
+<a href='https://github.com/Alanwatts42/scraper'> https://github.com/Alanwatts42/scraper</a>
 
-### It is what it is...
+### "It is what it is..."  - god, after a week of failed attempts, settling for what he ended up with.
 
 <br>
 
-### This is a very..  VERY.. Simple web scraper written in Python 3, and 
-### utilizing the Requests and Beautiful Soup 4 libraries.
+This is a very..  VERY.. Simple web scraper written in Python 3, and utilizing the Requests and Beautiful Soup 4 libraries.
 
 <br>
 
@@ -23,8 +22,8 @@ milestone that needs to happen, awkwardness not withstanding.
 
 <br>
 
-### Possible important bullet-points pertaining to this project:
-
+### Details that are useful to me (and possibly only to me, but here they are anyway)
+---
 - I am using `pipenv` for virtual environment and dependency management. Why? Because it makes more sense to me than virtualenv ever did.
 - The structure of this project is what I believe to be the typical structure of a python project. Top level directory will contain the README.md and the LICENSE. There's a directory for the primary script(s) called scraper, and a folder for tests. If I end up using any other files that don't fall into either of these two categories, I'll have a directory for those as well, whatever they may be.
 - The scraper will use `requests` to pull the required web pages, and `beautifulsoup` to parse through the html/css/js of said web pages to find the info or files being scraped.
