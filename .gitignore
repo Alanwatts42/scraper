@@ -1,0 +1,12 @@
+# .gitignore - scraper
+# https://github.com/Alanwatts42/scraper
+
+*.sw*
+*.pyc
+*.pyd
+*.txt
+Pipfile
+Pipfile.lock
+
+
+
