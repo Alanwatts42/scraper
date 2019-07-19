@@ -9,4 +9,4 @@ Pipfile
 Pipfile.lock
 
 # ignoring directory of cloned repo 'youtube_tutorials' but keeping it locally for reference.
-study-docs/youtube_tutorials
+study-docs/youtube_tutorials/*

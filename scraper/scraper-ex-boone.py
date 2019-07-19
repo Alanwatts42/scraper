@@ -27,23 +27,3 @@ if __name__ == '__main__':
     #get_table('tbody', {'class': 'stripe'})
     for row in table.findAll('tr'):
         print(table.prettify())
-
-
-#### commented original code below - keeping for reference
-#
-# url = input("What is the target url? ")
-# url = 'https://romsmania.cc/'
-#
-# response = requests.get(url)
-# html = response.content
-#
-# soup = BeautifulSoup(html, features='html.parser')
-# links = soup.find('ul', attrs={'class': 'dropdown__list'})
-#
-#
-# if __name__ == '__main__':
-#     
-#     for link in links.findAll('li'):
-#         print(links.prettify())
-#
-#
