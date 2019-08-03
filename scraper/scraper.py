@@ -18,14 +18,16 @@ def grandFather(info):
     """info var is a unique data point within the target data, easily searched.
     function returns all of its parent data, making it easier to know
     what to scrape"""
-    family = soup.findAll(info)[0].parent.parent
+    family = soup.findAll(text=info)[0].parent
     return family
 
        
 
 if __name__ == '__main__':
-    d = grandFather("ConcreteType=")
-    print('d')
+    # d = grandFather("this")
+    # print(d)
+    d = grandFather('import')
+    print(d)
 
 
 
