@@ -32,3 +32,15 @@ milestone that needs to happen, awkwardness not withstanding.
 - The UI will almost certainly be command-line based. I have enough experience to know the pitfalls of a GUI, and I don't want to bite off more than I can chew.
 - I will probably use something like `argparse` to implement simple command line arguments that can adjust some simple settings for what is being scraped or how the results are being parsed or output to the user.
 - If the gods are with me, perhaps I will succeed in this endeavor. May the force be with me, and may the hair on my toes never fall out. May the odds be ever in my.... no that's going too far. Excelsiar!
+-
+-<br>
+
+# Updates & Changes
+
+<br>
+
+- Aug 25, 2019 - Set remote urls for all git repos to SSH. Maybe now, since 
+it's easier to do 'git push' (with SSH having eliminated the need to enter a 
+password) I'll actually start making some progress. To quote the 90's hip-
+hop artist salt n peppa: "Aaah push it...    push it good!    aaah push 
+it...    P-PUSH IT REAL GOOD!"
