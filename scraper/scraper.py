@@ -1,6 +1,7 @@
 #/usr/bin/python3
 import requests
 from bs4 import BeautifulSoup
+import lxml
 
 """
 Simple web page scraper: primarily utilitzing requests and bs4
@@ -10,21 +11,31 @@ url="https://stackoverflow.com/questions/57200316\
 /57200887#57200887"
 """
 
+
+url = input("enter url: ") 
 response = requests.get(url)
 html = response.content
 
-soup = BeautifulSoup(html, features="html.parser")
+soup = BeautifulSoup(html, lxml, features="html.parser")
 
-def grandFather(info):    
-    family = soup.findAll(text=info)[0].parent
-    return family
+# def grandFather(info):    
+#     family = soup.findAll(text=info)[0].parent
+#     return family
+
+def search(tag):
+    result = soup.findAll(text=tag)
+    print(result)
 
 if __name__ == '__main__':
-    # d = grandFather("this")
+# d = grandFather("this")
     # print(d)
-    d = grandFather('import')
-    print(d)
+    # d = grandFather('import')
+    # print(d)
+    url = input("enter url: ") 
+    search(input("enter tag to search: "))
+    
 
+   
 #### commented original code below - keeping for reference
 #
 # table = soup.find('tbody', attrs={'id': 'mrc_main_table'})
