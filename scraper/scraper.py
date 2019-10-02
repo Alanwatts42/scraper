@@ -1,10 +1,13 @@
-#usr/bin/python3
+#/usr/bin/python3
 import requests
 from bs4 import BeautifulSoup
+
 """
 Simple web page scraper: primarily utilitzing requests and bs4
 
-url="https://stackoverflow.com/questions/57200316/use-self-type-as-return-type-in-scala-trait/57200887#57200887"
+url="https://stackoverflow.com/questions/57200316\
+/use-self-type-as-return-type-in-scala-trait\
+/57200887#57200887"
 """
 
 response = requests.get(url)
