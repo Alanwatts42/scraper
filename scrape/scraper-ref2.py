@@ -5,8 +5,10 @@
 # Obtaining links from website: 
 # https://www.whitehouse.gov/briefings-statements
 
-# One of the things on this website is records of presidential briefings
-# and statements.
+"""One of the things on this 
+website is records of 
+presidential briefings
+and statements."""
 
 # Goal: Extract all links on page for briefings and statements
 

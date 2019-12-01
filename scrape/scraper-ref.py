@@ -1,14 +1,13 @@
 #/usr/bin/python3
 
-import requests
 from bs4 import BeautifulSoup
+import requests
 
 # Setting url default to google.com homepage if no other url is given
 url = "https://www.google.com"
 
 # Variable 'result' holds the data retrieved by requests.get(url)
 result = requests.get(url)
-
 
 """ 
 To make sure site is accessible, printing the http status code of 
@@ -26,7 +25,9 @@ on HTTP status codes.
 
 https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 """
-print(result.headers) 
+headers = result.headers 
+for header in headers:
+    print(header, "\n")
  
 """ 
 Now let's store the page content of the website accessed from 
@@ -48,12 +49,12 @@ can access specific information directly from it. For instance,
 say we want a list of all the links on the page:
 """
 links = soup.find_all("a")
-print(links)
-print("\n")
+for link in links:
+    print(link, "\n")
 
 for link in links:
     if "Maps" in link.text:
-        print(link)
+        print(link, "\n")
         print(link.attrs['href'])
 
 

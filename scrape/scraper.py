@@ -11,39 +11,35 @@ url="https://stackoverflow.com/questions/57200316\
 /57200887#57200887"
 """
 
+class get:
 
-url = input("enter url: ") 
-response = requests.get(url)
-html = response.content
+    url = input("enter url: ") 
+    if url is not 
+    result = requests.get(url)
+    html = result.content
+    soup = BeautifulSoup(html, lxml)
 
-soup = BeautifulSoup(html, lxml, features="html.parser")
+    # def grandFather(info):    
+    #     family = soup.findAll(text=info)[0].parent
+    #     return family
 
-# def grandFather(info):    
-#     family = soup.findAll(text=info)[0].parent
-#     return family
-
-def search(tag):
-    result = soup.findAll(text=tag)
-    print(result)
+    def search(tag):
+        result = soup.findAll(text=tag)
+        print(result)
 
 if __name__ == '__main__':
-# d = grandFather("this")
-    # print(d)
-    # d = grandFather('import')
-    # print(d)
-    url = input("enter url: ") 
-    search(input("enter tag to search: "))
+    get()
+    t = input("enter tag to search: ")
+    search(t)
     
-
-   
 #### commented original code below - keeping for reference
 #
 # table = soup.find('tbody', attrs={'id': 'mrc_main_table'})
 # url = input("What is the target url? ")
 # url = 'https://romsmania.cc/'
 #
-# response = requests.get(url)
-# html = response.content
+# result = requests.get(url)
+# html = result.content
 #
 # soup = BeautifulSoup(html, features='html.parser')
 # links = soup.find('ul', attrs={'class': 'dropdown__list'})
