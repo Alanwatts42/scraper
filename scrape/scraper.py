@@ -1,4 +1,5 @@
 #/usr/bin/python3
+from validators import url
 import requests
 from bs4 import BeautifulSoup
 import lxml
@@ -11,27 +12,51 @@ url="https://stackoverflow.com/questions/57200316\
 /57200887#57200887"
 """
 
-class get:
+class stew:
 
-    url = input("enter url: ") 
-    if url is not 
-    result = requests.get(url)
+    def check_url(site):
+        r = url(site)
+        return r
+
+   
+    while n is not True:
+        try:
+            site = input("enter url: ")
+            n = check_url(site)
+            break
+        except ValueError:
+            print("URL is not valid, please try again.")
+    print("URL validation for " + site + "successful!")
+
+
+
+
+
+    result = requests.get(u)
     html = result.content
-    soup = BeautifulSoup(html, lxml)
+    soup = BeautifulSoup(html, features='html.parser')
 
-    # def grandFather(info):    
-    #     family = soup.findAll(text=info)[0].parent
-    #     return family
+    def grandFather(info):    
+        g = soup.findAll(text=info)[0].parent
+        return g)
+
+
+class ladle:
 
     def search(tag):
         result = soup.findAll(text=tag)
         print(result)
+    
+    t = input("enter tag to search: ")
+    
+    search(t)
+
+
 
 if __name__ == '__main__':
-    get()
-    t = input("enter tag to search: ")
-    search(t)
-    
+    stew()
+    ladle()
+
 #### commented original code below - keeping for reference
 #
 # table = soup.find('tbody', attrs={'id': 'mrc_main_table'})
