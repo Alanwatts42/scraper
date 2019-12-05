@@ -5,6 +5,8 @@
 *.pyc
 *.pyd
 *.txt
+scrape/Pipfile
+scrape/Pipfile.lock
 Pipfile
 Pipfile.lock
 
