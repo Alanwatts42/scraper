@@ -19,30 +19,30 @@ class stew:
         return r
 
    
-    while n is not True:
+    
+    site = input("enter url: ")
+    while check_url(site) is not True:
         try:
-            site = input("enter url: ")
-            n = check_url(site)
+            check_url(site)
             break
-        except ValueError:
-            print("URL is not valid, please try again.")
-    print("URL validation for " + site + "successful!")
+        except valueerror:
+            print("url is not valid, please try again.")
+    
+    print("url validation for " + site + "successful!")
 
 
 
-
-
-    result = requests.get(u)
-    html = result.content
-    soup = BeautifulSoup(html, features='html.parser')
-
-    def grandFather(info):    
-        g = soup.findAll(text=info)[0].parent
-        return g)
+    # def grandFather(info):    
+    #     g = soup.findAll(text=info)[0].parent
+    #     return g
 
 
 class ladle:
 
+    result = requests.get(site)
+    html = result.content
+    soup = BeautifulSoup(html, features='html.parser')
+    
     def search(tag):
         result = soup.findAll(text=tag)
         print(result)
