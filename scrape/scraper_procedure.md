@@ -50,7 +50,7 @@ url = 'http://www.showmeboone.com/sheriff/JailResidents/JailResidents.asp'
 response = requests.get(url)
 html = response.content
 
-soup = BeautifulSoup(html)
+soup = BeautifulSoup(html, 'html.parser')
 print(soup.prettify())
 
 ```
@@ -68,7 +68,7 @@ url = http://www.showmeboone.com/sheriff/JailResidents/JailResidents.asp
 response = requests.get(url)
 html = response.content
 
-soup = BeautifulSoup(html)
+soup = BeautifulSoup(html, 'html.parser')
 table = soup.find('tbody', attrs={'class': 'stripe'})
 print(table.prettify())
 ```
@@ -92,7 +92,7 @@ url = http://www.showmeboone.com/sheriff/JailResidents/JailResidents.asp
 response = requests.get(url)
 html = response.content
 
-soup = BeautifulSoup(html)
+soup = BeautifulSoup(html, 'html.parser')
 table = soup.find('tbody', attrs={'class': 'stripe'})
 
 for row in table.findAll('tr'):
