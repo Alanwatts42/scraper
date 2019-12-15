@@ -70,7 +70,7 @@ def get_hits_on_name(name):
     last 60 days, as an 'int'
     """
     # url_root is a template string that is used to build a URL.
-    url_root = 'URL_REMOVED_SEE_NOTICE_AT_START_OF_ARTICLE'
+    url_root = 'https://xtools.wmflabs.org/articleinfo/en.wikipedia.org/'
     response = simple_get(url_root.format(name))
 
     if response is not None:
