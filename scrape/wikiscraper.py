@@ -1,10 +1,13 @@
-"""Wikiscraper: an example python scraper
-https://realpython.com/python-web-scraping-practical-introduction/"""
+"""
+Wikiscraper: an example python scraper
+https://realpython.com/python-web-scraping-practical-introduction/
+"""
 
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
 from bs4 import BeautifulSoup
+from datetime import datetime, timedelta, isoformat
 
 def simple_get(url):
     """
@@ -91,6 +94,13 @@ def get_hits_on_name(name):
     log_error('No pageviews found for {}'.format(name))
     return None
 
+
+
+
+
+def sixty_days_ago():
+    t_minus_60_days = datetime.now() - timedelta(days = 60)
+    return isoformat(t_minus_60_days)
 
 
 if __name__ == '__main__':
