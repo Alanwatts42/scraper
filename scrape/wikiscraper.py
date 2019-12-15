@@ -7,7 +7,7 @@ from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta, isoformat
+from datetime import datetime, timedelta, date
 
 def simple_get(url):
     """
@@ -100,7 +100,8 @@ def get_hits_on_name(name):
 
 def sixty_days_ago():
     t_minus_60_days = datetime.now() - timedelta(days = 60)
-    return isoformat(t_minus_60_days)
+    t_reformat = t_minus_60_days.strftime("%Y%m%d")
+    return t_reformat
 
 
 if __name__ == '__main__':
