@@ -100,7 +100,8 @@ def get_hits_on_name(name):
 
 def sixty_days_ago():
     t_minus_60_days = datetime.now() - timedelta(days = 60)
-    t_reformat = t_minus_60_days.strftime("%Y%m%d")
+    t_reformat = print(t_minus_60_days.strftime("%Y%m%d"),
+            datetime.now().strftime("%Y%m%d"))
     return t_reformat
 
 
