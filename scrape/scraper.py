@@ -1,4 +1,5 @@
-#/usr/bin/python3
+#!/usr/bin/python3
+
 from validators import url
 import requests
 from bs4 import BeautifulSoup

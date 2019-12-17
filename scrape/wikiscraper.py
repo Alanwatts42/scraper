@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 Wikiscraper: an example python scraper
 https://realpython.com/python-web-scraping-practical-introduction/
